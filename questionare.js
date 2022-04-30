@@ -3,7 +3,7 @@ function getPhysical() {
     var amount = 0;
 
     // LOOP FOR GOING THROUGH ALL QUESTIONS
-    for(var i = 1; i <= 13; i++) {
+    for(var i = 1; i <= 12; i++) {
         var radiosName = document.getElementsByName('physical'+i);
   
         //LOOP FOR CHECKING ANSWERS INSIDE EACH RADIO
@@ -31,7 +31,16 @@ function getPhysical() {
             }
         }
     }
-    outputPhysical.innerText = amount ? `Your total is ${amount}` : `You have not select an answers`;
+
+    var review;
+    if (amount >= 30){
+        review = "You are doing well!"
+    }
+    else {
+        review = "You have room for improvement!"
+    }
+
+    outputPhysical.innerText = amount ? `Your total is ${amount} \n${review}` : `You have not select an answers`;
 }
 
 function getPsychological(){
@@ -39,7 +48,7 @@ function getPsychological(){
     var amount = 0;
 
     // LOOP FOR GOING THROUGH ALL QUESTIONS
-    for(var i = 1; i <= 11; i++) {
+    for(var i = 1; i <= 10; i++) {
         var radiosName = document.getElementsByName('psychological'+i);
   
         //LOOP FOR CHECKING ANSWERS INSIDE EACH RADIO
@@ -67,7 +76,16 @@ function getPsychological(){
             }
         }
     }
-    outputPsychological.innerText = amount ? `Your total is ${amount}` : `You have not select an answers`;
+
+    var review;
+    if (amount >= 30){
+        review = "You are doing well!"
+    }
+    else {
+        review = "You have room for improvement!"
+    }
+
+    outputPsychological.innerText = amount ? `Your total is ${amount} \n${review}` : `You have not select an answers`;
 }
 
 function getEmotional(){
@@ -75,7 +93,7 @@ function getEmotional(){
     var amount = 0;
 
     // LOOP FOR GOING THROUGH ALL QUESTIONS
-    for(var i = 1; i <= 11; i++) {
+    for(var i = 1; i <= 10; i++) {
         var radiosName = document.getElementsByName('emotional'+i);
   
         //LOOP FOR CHECKING ANSWERS INSIDE EACH RADIO
@@ -103,7 +121,16 @@ function getEmotional(){
             }
         }
     }
-    outputEmotional.innerText = amount ? `Your total is ${amount}` : `You have not select an answers`;
+
+    var review;
+    if (amount >= 30){
+        review = "You are doing well!"
+    }
+    else {
+        review = "You have room for improvement!"
+    }
+
+    outputEmotional.innerText = amount ? `Your total is ${amount} \n${review}` : `You have not select an answers`;
 }
 
 function getSpiritual(){
@@ -111,7 +138,7 @@ function getSpiritual(){
     var amount = 0;
 
     // LOOP FOR GOING THROUGH ALL QUESTIONS
-    for(var i = 1; i <= 12; i++) {
+    for(var i = 1; i <= 11; i++) {
         var radiosName = document.getElementsByName('spiritual'+i);
   
         //LOOP FOR CHECKING ANSWERS INSIDE EACH RADIO
@@ -139,5 +166,14 @@ function getSpiritual(){
             }
         }
     }
-    outputSpiritual.innerText = amount ? `Your total is ${amount}` : `You have not select an answers`;
+
+    var review;
+    if (amount >= 30){
+        review = "You are doing well!"
+    }
+    else {
+        review = "You have room for improvement!"
+    }
+
+    outputSpiritual.innerText = amount ? `Your total is ${amount} \n${review}` : `You have not select an answers`;
 }
