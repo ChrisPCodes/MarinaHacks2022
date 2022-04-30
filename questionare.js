@@ -3,7 +3,7 @@ function getPhysical() {
     var amount = 0;
 
     // LOOP FOR GOING THROUGH ALL QUESTIONS
-    for(var i = 1; i <= 3; i++) {
+    for(var i = 1; i <= 13; i++) {
         var radiosName = document.getElementsByName('physical'+i);
   
         //LOOP FOR CHECKING ANSWERS INSIDE EACH RADIO
