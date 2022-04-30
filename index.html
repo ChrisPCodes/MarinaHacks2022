@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
@@ -151,6 +153,30 @@
   textarea {
     resize: none;
   }
+
+  .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -239,6 +265,10 @@
   <p><em>How are you feeling?</em></p>
   <p>We, as students, know how tough school can get. Assignments, midterms, finals, social life, financial status, etc. are all problems we have to deal with. Fortunately, you don't have to go through it alone. Our university has plenty of resources available that can make your college experience a little easier. You can take an assessment which will recommend you the appropriate sources you may need, depending on your responses. If you do not wish to take an assessment, you can explore the many services available on campus and choose which one you may want to check out.</p>
   <br>
+  <div class="row text-center">
+        <p><strong>Take the Self Care Assessment</strong></p>
+        <button class="btn" onclick="document.location='questionare.html'">GET STARTED</button>
+    </div>
   <!-- <div class="row">
     <div class="col-sm-4">
       <p class="text-center"><strong>Name</strong></p><br>
@@ -400,7 +430,19 @@
     </div>
     <div id="menu1" class="tab-pane fade">
       <h2>Christopher Pineda</h2>
-      <p>Random sentence</p>
+    
+    <div class="col-md-4">
+      <p>Student or Alumni? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>California, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: pineda.123chris@gmail.com</p>
+
+    <!-- Add social media links -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <a href="https://www.linkedin.com/in/christopher-pineda-5549431a3/" class="fa fa-linkedin"></a>
+    <!-- <a href="#" class="fa fa-instagram"></a> -->
+    </div>
+
     </div>
     <div id="menu2" class="tab-pane fade">
       <h2>Isela Cruz</h2>
