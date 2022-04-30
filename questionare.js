@@ -3,7 +3,7 @@ function getPhysical() {
     var amount = 0;
 
     // LOOP FOR GOING THROUGH ALL QUESTIONS
-    for(var i = 1; i <= 13; i++) {
+    for(var i = 1; i <= 12; i++) {
         var radiosName = document.getElementsByName('physical'+i);
   
         //LOOP FOR CHECKING ANSWERS INSIDE EACH RADIO
@@ -39,7 +39,7 @@ function getPsychological(){
     var amount = 0;
 
     // LOOP FOR GOING THROUGH ALL QUESTIONS
-    for(var i = 1; i <= 11; i++) {
+    for(var i = 1; i <= 10; i++) {
         var radiosName = document.getElementsByName('psychological'+i);
   
         //LOOP FOR CHECKING ANSWERS INSIDE EACH RADIO
@@ -75,7 +75,7 @@ function getEmotional(){
     var amount = 0;
 
     // LOOP FOR GOING THROUGH ALL QUESTIONS
-    for(var i = 1; i <= 11; i++) {
+    for(var i = 1; i <= 10; i++) {
         var radiosName = document.getElementsByName('emotional'+i);
   
         //LOOP FOR CHECKING ANSWERS INSIDE EACH RADIO
@@ -111,7 +111,7 @@ function getSpiritual(){
     var amount = 0;
 
     // LOOP FOR GOING THROUGH ALL QUESTIONS
-    for(var i = 1; i <= 12; i++) {
+    for(var i = 1; i <= 11; i++) {
         var radiosName = document.getElementsByName('spiritual'+i);
   
         //LOOP FOR CHECKING ANSWERS INSIDE EACH RADIO
