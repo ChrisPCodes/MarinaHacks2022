@@ -1,17 +1,3 @@
-const btn = document.querySelector('#btn');        
-const radioButtons = document.querySelectorAll('input[name="q1"]');
-btn.addEventListener("click", () => {
-    let selectedQuestion;
-    for (const radioButton of radioButtons) {
-        if (radioButton.checked) {
-            selectedQuestion = radioButton.value;
-            break;
-        }
-    }
-    // show the output:
-    output.innerText = selectedQuestion ? `You selected ${selectedQuestion}` : `You haven't selected any size`;
-});
-
 function getPhysical() {
     //CORRECT ANSWERS
     var amount = 0;
