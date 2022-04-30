@@ -31,7 +31,16 @@ function getPhysical() {
             }
         }
     }
-    outputPhysical.innerText = amount ? `Your total is ${amount}` : `You have not select an answers`;
+
+    var review;
+    if (amount >= 30){
+        review = "You are doing well!"
+    }
+    else {
+        review = "You have room for improvement!"
+    }
+
+    outputPhysical.innerText = amount ? `Your total is ${amount} \n${review}` : `You have not select an answers`;
 }
 
 function getPsychological(){
@@ -67,7 +76,16 @@ function getPsychological(){
             }
         }
     }
-    outputPsychological.innerText = amount ? `Your total is ${amount}` : `You have not select an answers`;
+
+    var review;
+    if (amount >= 30){
+        review = "You are doing well!"
+    }
+    else {
+        review = "You have room for improvement!"
+    }
+
+    outputPsychological.innerText = amount ? `Your total is ${amount} \n${review}` : `You have not select an answers`;
 }
 
 function getEmotional(){
@@ -103,7 +121,16 @@ function getEmotional(){
             }
         }
     }
-    outputEmotional.innerText = amount ? `Your total is ${amount}` : `You have not select an answers`;
+
+    var review;
+    if (amount >= 30){
+        review = "You are doing well!"
+    }
+    else {
+        review = "You have room for improvement!"
+    }
+
+    outputEmotional.innerText = amount ? `Your total is ${amount} \n${review}` : `You have not select an answers`;
 }
 
 function getSpiritual(){
@@ -139,5 +166,14 @@ function getSpiritual(){
             }
         }
     }
-    outputSpiritual.innerText = amount ? `Your total is ${amount}` : `You have not select an answers`;
+
+    var review;
+    if (amount >= 30){
+        review = "You are doing well!"
+    }
+    else {
+        review = "You have room for improvement!"
+    }
+
+    outputSpiritual.innerText = amount ? `Your total is ${amount} \n${review}` : `You have not select an answers`;
 }
