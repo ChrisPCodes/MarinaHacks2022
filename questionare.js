@@ -30,7 +30,7 @@ function getPhysical() {
                 }
             }
         }
-    }
+    } 
 
     var review;
     if (amount >= 30){
@@ -38,6 +38,21 @@ function getPhysical() {
     }
     else {
         review = "You have room for improvement!"
+
+        // Create anchor element.
+        var a = document.createElement('a'); 
+            
+        // Create the text node for anchor element.
+        var link = document.createTextNode("You can click on the link for some resources");
+            
+        // Append the text node to anchor element.
+        a.appendChild(link); 
+            
+        // Set the href property.
+        a.href = "groups.html"; 
+            
+        // Append the anchor element to the body.
+        document.getElementById("SamplePhysical").appendChild(a);
     }
 
     outputPhysical.innerText = amount ? `Your total is ${amount} \n${review}` : `You have not select an answers`;
@@ -83,6 +98,21 @@ function getPsychological(){
     }
     else {
         review = "You have room for improvement!"
+
+        // Create anchor element.
+        var a = document.createElement('a'); 
+            
+        // Create the text node for anchor element.
+        var link = document.createTextNode("You can click on the link for some resources");
+            
+        // Append the text node to anchor element.
+        a.appendChild(link); 
+            
+        // Set the href property.
+        a.href = "groups.html"; 
+            
+        // Append the anchor element to the body.
+        document.getElementById("SamplePsychological").appendChild(a);
     }
 
     outputPsychological.innerText = amount ? `Your total is ${amount} \n${review}` : `You have not select an answers`;
@@ -128,6 +158,21 @@ function getEmotional(){
     }
     else {
         review = "You have room for improvement!"
+
+        // Create anchor element.
+        var a = document.createElement('a'); 
+            
+        // Create the text node for anchor element.
+        var link = document.createTextNode("You can click on the link for some resources");
+            
+        // Append the text node to anchor element.
+        a.appendChild(link); 
+            
+        // Set the href property.
+        a.href = "groups.html"; 
+            
+        // Append the anchor element to the body.
+        document.getElementById("SampleEmotional").appendChild(a);
     }
 
     outputEmotional.innerText = amount ? `Your total is ${amount} \n${review}` : `You have not select an answers`;
@@ -173,6 +218,21 @@ function getSpiritual(){
     }
     else {
         review = "You have room for improvement!"
+
+        // Create anchor element.
+        var a = document.createElement('a'); 
+            
+        // Create the text node for anchor element.
+        var link = document.createTextNode("You can click on the link for some resources");
+            
+        // Append the text node to anchor element.
+        a.appendChild(link); 
+            
+        // Set the href property.
+        a.href = "groups.html"; 
+            
+        // Append the anchor element to the body.
+        document.getElementById("SampleSpiritual").appendChild(a);
     }
 
     outputSpiritual.innerText = amount ? `Your total is ${amount} \n${review}` : `You have not select an answers`;
